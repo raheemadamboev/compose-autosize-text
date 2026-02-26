@@ -1,0 +1,29 @@
+[versions]
+
+compose = "2026.02.00"
+compose-activity = "1.12.4"
+compose-lifecycle = "2.10.0"
+core = "1.17.0"
+
+android = "9.0.1"
+kotlin = "2.2.10"
+
+sdk-min = "26"
+sdk-compile = "36"
+sdk-target = "36"
+
+[libraries]
+
+compose = { group = "androidx.compose", name = "compose-bom", version.ref = "compose" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "compose-activity" }
+compose-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "compose-lifecycle" }
+core = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
+
+[plugins]
+
+android = { id = "com.android.application", version.ref = "android" }
+compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
