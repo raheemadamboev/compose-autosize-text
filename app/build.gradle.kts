@@ -7,15 +7,15 @@ android {
     namespace = "xyz.teamgravity.composeautosizetext"
 
     compileSdk {
-        version = release(36) {
+        version = release(libs.versions.sdk.compile.get().toInt()) {
             minorApiLevel = 1
         }
     }
 
     defaultConfig {
         applicationId = "xyz.teamgravity.composeautosizetext"
-        minSdk = 26
-        targetSdk = 36
+        minSdk = libs.versions.sdk.min.get().toInt()
+        targetSdk = libs.versions.sdk.target.get().toInt()
         versionCode = 1
         versionName = "1.0"
 
